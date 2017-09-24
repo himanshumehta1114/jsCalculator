@@ -1,6 +1,12 @@
+body {
+	background: #E1BEE7;
+}
+
 table{
+	margin-top : 100px;
 	background: #AB47BC;
 	margin-left : 400px;
+	border-radius: 5px;
 }
 
 h1{
