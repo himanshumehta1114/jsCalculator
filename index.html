@@ -4,26 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Javascript Calculator</title>
 	<link rel="stylesheet" href="bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<table>
-			<th>
+	<table class="table">
+		<thead>
+			<th colspan="5">
 				<h1>Electronic Calculator</h1>
 			</th>
+		</thead>
+		<tbody>
 			<tr>
-				<td>
-					<div>
+				<td colspan="5">
+					<div class="display" id="display">
 					</div>
-				</td>>
+				</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><button class="buttons">7</button></td>
+				<td><button class="buttons">8</button></td>
+				<td><button class="buttons">9</button></td>
+				<td><button class="buttons">-</button></td>
 			</tr>
-		</table>
-	</div>
+			<tr>
+				<td><button class="buttons">4</button></td>
+				<td><button class="buttons">5</button></td>
+				<td><button class="buttons">6</button></td>
+				<td><button class="buttons">x</button></td>
+			</tr>
+			<tr>
+				<td><button class="buttons">1</button></td>
+				<td><button class="buttons">2</button></td>
+				<td><button class="buttons">3</button></td>
+				<td><button class="buttons">x</button></td>
+			</tr>
+			<tr>
+				<td><button class="buttons">0</button></td>
+				<td><button class="buttons">&nbsp.</button></td>
+				<td><button class="buttons">+</button></td>
+				<td><button class="buttons">=</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
 </body>
 </html>
