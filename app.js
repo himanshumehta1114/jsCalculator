@@ -1,7 +1,6 @@
 	var acc = "";
 	var getExp = function(button){
 		acc += button;
-		console.log(button);
 		$('#display').append(button);
 	};
 $(document).ready(function(){
@@ -20,4 +19,18 @@ $(document).ready(function(){
 	$('#sub').click(function(){getExp('-');});
 	$('#mul').click(function(){getExp('*');});
 	$('#div').click(function(){getExp('/');});
+	$('#equal').click(function(){
+		var result = eval(acc);
+		acc = ''
+		console.log(result);
+		$('#display').html(result);
+		
+	})
+
+
+	$('#ac').click(function(){
+		acc = '';
+		$('#display').html(acc);
+	});
+
 });
